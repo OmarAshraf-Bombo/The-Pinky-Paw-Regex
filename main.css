@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(50, 54, 58);
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  vertical-align: middle;
+  left: 10px;
+  letter-spacing: -1px;
+}
+.logo svg {
+  margin-top: -2px;
+  vertical-align: middle;
+  width: 25px;
+  margin-right: 5px;
+  fill: rgb(184, 67, 118);
+}
+.logo span {
+  color: rgb(184, 67, 118);
+}
+
+.form-container {
+  width: 80%;
+}
+
+fieldset {
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 450px;
+  height: 45px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+fieldset div {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(58, 62, 66);
+  padding: 13px;
+}
+fieldset div svg path {
+  fill: rgb(97, 100, 103);
+}
+
+fieldset input {
+  width: 95%;
+  padding: 15px;
+  background-color: rgb(63, 67, 73);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: white;
+}
+
+fieldset + p {
+  transform-origin: bottom;
+  transition: 300ms;
+  font-size: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: -12px;
+  margin-bottom: 15px;
+  color: rgb(255, 97, 165);
+}
+
+button {
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  background-color: rgb(63, 67, 73);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(184, 67, 118);
+  cursor: pointer;
+  transition: 100ms;
+}
+button:hover {
+  background-color: rgb(159, 59, 102);
+}
+
+h5 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(97, 100, 103);
+  font-weight: normal;
+}
+h5 span {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+h5 span svg {
+  max-width: 20px;
+  max-height: 13px;
+  fill: white;
+  vertical-align: middle;
+}
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: rgb(97, 100, 103);
+}
+
+@media (max-width: 442px) {
+  .form-container {
+    width: 90%;
+  }
+
+  fieldset {
+    height: 38px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
