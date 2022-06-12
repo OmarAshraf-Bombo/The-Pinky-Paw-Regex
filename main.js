@@ -64,6 +64,9 @@ document.querySelector("button").onclick = () => {
       document.querySelector("h5").style.display = "none";
       document.querySelector("button").innerHTML = "ACCOUNT CREATED";
       document.querySelector("audio").play();
+      setTimeout(() => {
+        document.querySelector("audio").remove();
+      }, 1200); // 1200 MilliSecond
     });
   }
 };
