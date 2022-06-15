@@ -17,6 +17,11 @@ body {
   height: 100vh;
   /* background-color: rgb(50, 54, 58); */
   background: linear-gradient(40deg, rgb(50, 54, 58) 45%, rgb(88 34 57));
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .logo {
@@ -60,7 +65,7 @@ fieldset div {
   padding: 13px;
 }
 fieldset div svg path {
-  fill: rgb(97, 100, 103);
+  fill: rgb(26, 26, 26);
 }
 
 fieldset input {
@@ -73,14 +78,14 @@ fieldset input {
   color: white;
 }
 fieldset input::placeholder {
-  color: rgb(182, 182, 182);
+  /* color: rgb(26, 26, 26); */
+  color: white;
 }
 
 fieldset + p {
   transform-origin: bottom;
   transition: 300ms;
   font-size: 0px;
-  width: 100%;
   text-align: center;
   margin-top: -12px;
   margin-bottom: 15px;
@@ -112,7 +117,7 @@ h5 {
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
-  color: rgb(97, 100, 103);
+  color: rgb(26, 26, 26);
   font-weight: normal;
 }
 h5 span {
@@ -134,7 +139,7 @@ footer {
   right: 0;
   width: 100%;
   text-align: center;
-  color: rgb(97, 100, 103);
+  color: rgb(26, 26, 26);
 }
 
 @media (max-width: 442px) {
