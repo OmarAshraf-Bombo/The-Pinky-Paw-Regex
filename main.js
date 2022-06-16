@@ -61,14 +61,33 @@ document.querySelector("button").onclick = () => {
   if (!checkArray.includes(false)) {
     allInputs.forEach((input) => {
       input.parentElement.style.display = "none";
+      document.querySelector("h1").innerText = "Thank You";
       document.querySelector("h5").style.display = "none";
       document.querySelector("button").innerHTML = "ACCOUNT CREATED";
+      document.querySelector("button").style.pointerEvents = "none";
       document.querySelector("audio").play();
-      setTimeout(() => {
-        document.querySelector("audio").remove();
-      }, 1200); // 1200 MilliSecond
     });
+
+    setInterval(createHearts, 500);
   }
+};
+
+// Heart Falls
+const createHearts = () => {
+  let heart = document.createElement("div");
+  heart.innerHTML = "💖";
+  let randomXPosition = `${Math.floor(Math.random() * 100)}%`;
+  let randomDuration = `${Math.floor(Math.random() * 10)}s`;
+  heart.classList.add("heart");
+  heart.style.left = randomXPosition;
+  heart.style.top = "-0%";
+  document.body.appendChild(heart);
+
+  heart.style.animationDuration = randomDuration;
+
+  setTimeout(() => {
+    heart.remove();
+  }, 2500);
 };
 
 // Footer Year Updated Automatically
